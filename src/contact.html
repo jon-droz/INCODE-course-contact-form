@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mr. Coffee - Nous contacter - Mr. Coffee</title>
+    <meta name="description" content="On vous attend! 15 place Jules Guesde, 75006 Paris | Tel: +33 946257845 | contact@mr-coffee.com">
+    <link rel="stylesheet" href="application.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<nav class="navigation">
+    <div class="logo">
+        <img src="assets/full_logo_white_h60px.png" alt="logo">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Qui sommes-nous?</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="header">
+    <div class="container">
+        <h1 class="main-title"><img src="assets/logo_mrcoffee_h200px.png" alt="logo Mr. Coffee"></h1>
+    </div>
+</section>
+
+<section class="form">
+    <h2 class="contact-form-title">Dites nous tout!</h2>
+    <form class="contact-form">
+        <label for="name">Nom*</label><br>
+        <input type="text" id="name" name="name" pattern=".{1,}" required><br>
+        
+        <label for="surname">Prenom*</label><br>
+        <input type="text" id="surname" name="surname" pattern=".{1,}" required><br>
+        
+        <label for="phone">Telephone</label><br>
+        <input type="tel" id="phone" name="phone" pattern="^(\+)?(\d{2})?\s?\d{3}[ -]?\d{3}[ -]?\d{3}$"><br> 
+       
+        <label for="email">Adresse mail*</label><br>
+        <input type="email" id="email" name="email" pattern="^[a-zA-Z1-9-_+.]+@[a-zA-Z1-9-_\.]+\.[a-zA-Z]+$" required><br>
+        
+        <label for="message">Message*</label><br>
+        <textarea type="text" id="message" name="message" rows="4" placeholder="Tapez votre message ici" pattern=".{3,}" required></textarea><br>
+        
+        <div class="btn">
+            <button class="button" type="submit">ENVOYER</button><br>
+        </div>
+    </form>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="logo-dark" src="assets/logo_dark.png">
+            <h2>MERCI</br>
+                Votre message a bien été envoyé !</h2>
+            </div>
+            <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+            <div class="btn">
+                <button class="button" id="close-button" >FERMER</button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2 class="contact-title">On vous attend !</h2>
+        <div class="contact-data">
+            <p><b>Mr.Coffee</b><br />
+            15 place Jules Guesde<br />
+            75006 Paris<br />
+            </p>
+            <p>Tel&nbsp;: +33 9 46 25 78 45<br />
+            Mail&nbsp;: contact@mr-coffee.com</p>
+        </div>
+    </div>
+ <div class="map">
+        <img src="assets/carte_contact.png" alt="mapa dojazdu">
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="assets/logo_blanc_h90px.png" alt="logo">
+        </div>
+        <div class="social-links">
+            <p>Suivez nous sur les réseaux sociaux&nbsp;!</p>
+            <ul>
+                <li><a href="#"><img src="assets/logo_linkedin_h35px.png" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="assets/logo_twitter_h35px.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="assets/logo_facebook_h35px.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer> 
+
+<script src="./form.js"></script>
+</body>
+</html>
