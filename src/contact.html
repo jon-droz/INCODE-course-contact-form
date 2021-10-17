@@ -32,10 +32,10 @@
     <h2 class="contact-form-title">Dites nous tout!</h2>
     <form class="contact-form">
         <label for="name">Nom*</label><br>
-        <input type="text" id="name" name="name" pattern=".{1,}" required><br>
+        <input type="text" id="name" name="name" minlength= "1" required><br>
         
         <label for="surname">Prenom*</label><br>
-        <input type="text" id="surname" name="surname" pattern=".{1,}" required><br>
+        <input type="text" id="surname" name="surname" minlength="1" required><br>
         
         <label for="phone">Telephone</label><br>
         <input type="tel" id="phone" name="phone" pattern="^(\+)?(\d{2})?\s?\d{3}[ -]?\d{3}[ -]?\d{3}$"><br> 
@@ -44,7 +44,7 @@
         <input type="email" id="email" name="email" pattern="^[a-zA-Z1-9-_+.]+@[a-zA-Z1-9-_\.]+\.[a-zA-Z]+$" required><br>
         
         <label for="message">Message*</label><br>
-        <textarea type="text" id="message" name="message" rows="4" placeholder="Tapez votre message ici" pattern=".{3,}" required></textarea><br>
+        <textarea type="text" id="message" name="message" rows="4" placeholder="Tapez votre message ici" minlength="3" required></textarea><br>
         
         <div class="btn">
             <button class="button" type="submit">ENVOYER</button><br>
