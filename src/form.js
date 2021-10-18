@@ -25,7 +25,7 @@ function showModal() {
 
 function closeModal() {
   modal.style.display = 'none';
-  // form.submit();
+  form.submit();
 }
 
 closeModalButton.addEventListener('click', closeModal);
@@ -55,12 +55,14 @@ function validation(event) {
     errorMessage.innerHTML = `Les données saisies sont incorrectes ou incomplètes (${errorMessages.join(', ')}).`;
   } else {
     showModal();
-    console.log(`Name: ${inputName.value}
-                     Surname: ${inputSurname.value}
-                     Phone: ${inputPhone.value}
-                     Email: ${inputEmail.value}
-                     Message: ${textareaMessage.value}
-                     `);
+    const userData = {
+      Name: inputName.value,
+      Surname: inputSurname.value,
+      Phone: inputPhone.value,
+      Email: inputEmail.value,
+      Message: textareaMessage.value,
+    };
+    console.log(userData);
   }
 }
 
